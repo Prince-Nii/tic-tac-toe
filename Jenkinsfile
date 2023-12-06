@@ -6,7 +6,10 @@ pipeline {
         stage("build") {
 
             steps{
-                echo 'Building the application....'          
+                echo 'Building the application....'
+                nodejs('Node-21.4.0') {
+                    sh 'yarn install'
+                }
             }
         }
 
