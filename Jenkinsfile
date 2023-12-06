@@ -9,8 +9,7 @@ pipeline {
 
     stage('Directory files') {
       steps {
-        sh '''pwd
-&& whoami && ls -la'''
+        sh 'pwd'
       }
     }
 
